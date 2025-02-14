@@ -2,7 +2,7 @@ import os
 import base64
 from groq import Groq
 # You can optionally load environment variables as above or directly:
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "your-api-key"
 
 img_path = "acne.jpg"
 image_file = open(img_path, "rb")

@@ -1,10 +1,9 @@
+#linne 19 me eleven lab ki api key 
 import time
 from gtts import gTTS
 import elevenlabs
 from elevenlabs.client import ElevenLabs
 import pygame
-
-
 def gtts_tts_and_play(input_text, output_filepath="gtts_output.mp3"):
     tts = gTTS(text=input_text, lang="en", slow=False)
     tts.save(output_filepath)
@@ -17,7 +16,7 @@ def gtts_tts_and_play(input_text, output_filepath="gtts_output.mp3"):
     return output_filepath
 
 def text_to_speech_with_elevenlabs(input_text, output_filepath="elevenlabs_output.mp3"):
-    ELEVENLABS_API_KEY = "idhr apni eleven labs ki api key dalni hai"
+    ELEVENLABS_API_KEY = "11 lab ki api key idhr "
     client = ElevenLabs(api_key=ELEVENLABS_API_KEY)
     audio = client.generate(
         text=input_text,

@@ -1,3 +1,4 @@
+#line 11 me groq api key daalni hai
 import logging
 import speech_recognition as sr
 from pydub import AudioSegment
@@ -5,6 +6,9 @@ from pydub.utils import which
 from io import BytesIO
 import os
 from groq import Groq
+
+# Manually set your API key here (do not load from environment)
+GROQ_API_KEY = "Groq API Key Here"
 
 ffmpeg_path = which("ffmpeg")
 if ffmpeg_path is None:
@@ -41,13 +45,13 @@ def record_audio(filename="patient_voice_test.mp3", timeout=20, phrase_time_limi
         logging.error(f"An error occurred: {e}")
         return None
 
-def transcribe_with_groq(stt_model, audio_filepath, GROQ_API_KEY):
+def transcribe_with_groq(stt_model, audio_filepath, api_key=GROQ_API_KEY):
     """
     Transcribe the audio file using Groq's STT model.
     Returns the transcribed text or an error message.
     """
     try:
-        client = Groq(api_key=GROQ_API_KEY)
+        client = Groq(api_key=api_key)
         with open(audio_filepath, "rb") as audio_file:
             transcription = client.audio.transcriptions.create(
                 model=stt_model,

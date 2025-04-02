@@ -1,0 +1,9 @@
+gradio
+groq
+pydub
+SpeechRecognition
+pygame
+gTTS
+elevenlabs
+pybase64 
+TIME-python

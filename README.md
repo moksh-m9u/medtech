@@ -1,5 +1,9 @@
-# medtech
-this is a simple ai project for educational purposes only
-it has voice vision and hearing capabilities
-for using this repo u can clone this and install required dependencies add your api key of 11 labs and groq in .env file in the main code 
-and you are good to go
+# THE FILE STRUCTURE IS
+1. brain_of_the_doctor.py
+2. voice_of_the_patient.py
+3. voice_of_the_doctor.py
+4. gradio_app.py
+
+# every page has comments in the first line where u just need to go to the line and enter the required api key of groq and eleven labs 
+
+## in the end run the gradio.py file 
